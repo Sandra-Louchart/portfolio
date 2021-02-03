@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:ital,wght@0,400;0,900;1,400&display=swap');
+
+$c-primary: #160042;
+$c-primary-opacity: rgba(77, 40, 74, 0.7);
+$c-secondary: #DE892F;
+$c-light : #F1EBFF;
+$c-dark : #070014;
+$c-danger: #c40303;
+$c-success: #0e640e;
+
+$ff-title: 'Oswald', sans-serif;
+$ff-main: 'Roboto', sans-serif;
+$size-main: 16px;
+
+$space: 1rem;
+$space-sm: $space - .5;
+$space-md: $space + .5;
+$space-lg: $space + .5 * 2;
+$space-xl: ($space + .5) * 3;
+
+
+@import "~bootstrap/scss/bootstrap";

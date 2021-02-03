@@ -1,0 +1,65 @@
+@import 'vars.scss';
+
+* {
+
+}
+
+body {
+  margin: 0;
+  background-color: $c-light ;
+  font-family: $ff-title;
+  color: $c-secondary;
+}
+
+nav {
+  background-color: $c-primary ;
+
+}
+div.container
+{
+  font-family: $ff-main;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 10px;
+}
+
+div.container a
+{
+  color: #FFF;
+  text-decoration: none;
+  font: 20px $ff-main;
+  margin: 0px 10px;
+  padding: 10px 10px;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+}
+
+div.brackets a:before, div.brackets a:after
+{
+  position: absolute;
+  opacity: 0;
+  font-size: 35px;
+  top: 0px;
+  transition: all 0.3s;
+}
+
+div.brackets a:before
+{
+  content: '(';
+  left: 0px;
+  transform: translateX(10px);
+}
+
+div.brackets a:after
+{
+  content: ')';
+  right: 0px;
+  transform: translateX(-10px);
+}
+
+div.brackets a:hover:before, div.brackets a:hover:after
+{
+  opacity: 1;
+  transform: translateX(0px);
+}

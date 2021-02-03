@@ -1,10 +1,21 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Wild Series</title>
-</head>
-<body>
-<h1>{{ website }} index</h1>
-</body>
-</html>
+{% extends 'layout.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+    {% block stylesheets %}
+        {{ encore_entry_link_tags('home') }}
+    {% endblock %}
+
+
+{% block body %}
+    <h1>Bonjour</h1>
+
+    <p>Je m'appelle Sandra Louchart, dévelopeuse web et mobile junior. Force de mes expériences passées en tant
+    qu'ergothérapeute j'ai consolider durant ma formation à la Wild Code School mon intêret pour réaliser des projets
+    et aider les clients afin de pouvoir répondre à leurs besoins</p>
+
+    <p>Je suis une jeune femme passionée par la découverte et le défi quel sera le prochain ?</p>
+
+    CONTACT
+
+{% endblock %}

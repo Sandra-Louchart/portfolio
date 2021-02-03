@@ -14,8 +14,6 @@ Class HomeController extends AbstractController
      */
     public function index(): Response
     {
-        return $this->render('home/index.html.twig', [
-            'website' => 'Portfolio Sandar Louchart',
-        ]);
+        return $this->render('home/index.html.twig');
     }
 }
