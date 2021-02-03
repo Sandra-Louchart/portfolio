@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Me contacter{% endblock %}
+
+{% block body %}
+    <div class="form p-4 col-lg-5 col-sm-12 col-12">
+        <h2 class="title m-4">Me contacter</h2>
+        {{ form_start(form) }}
+        <div class="row">
+            <div class="col my-2 w-50">
+                {{ form_label(form.firstname, 'Prénom') }}
+                {{ form_widget(form.firstname) }}
+            </div>
+            <div class="col my-2 w-50">
+                {{ form_label(form.lastname, 'Nom') }}
+                {{ form_widget(form.lastname) }}
+            </div>
+        </div>
+        <div class="my-2">
+            {{ form_label(form.email, 'Email') }}
+            {{ form_widget(form.email) }}
+        </div>
+        <div class="my-2">
+            {{ form_label(form.subject, 'Sujet de votre demande') }}
+            {{ form_widget(form.subject) }}
+        </div>
+        <div class="my-2">
+            {{ form_label(form.message, 'Message') }}
+            {{ form_widget(form.message) }}
+        </div>
+        <div class="my-2">
+            <button class="btn btn-primary my-2">{{ ('Envoyer') }}</button>
+            {{ form_end(form) }}
+        </div>
+    </div>
+    </div>
+    </div>
+{% endblock %}

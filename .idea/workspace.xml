@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="004bcd0a-4992-4496-8f25-89dd973f361b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/portfolio.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/portfolio.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/ContactController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Contact.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/ContactType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/ContactRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/contact/contact.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/contact/email.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8e39bdd8-a12e-4f72-bd34-25b728ca2bf3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8e39bdd8-a12e-4f72-bd34-25b728ca2bf3.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +149,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Controller" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -162,7 +162,11 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Controller" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/admin" />
       <recent name="$PROJECT_DIR$/assets/js" />
     </key>
   </component>
@@ -179,7 +183,7 @@
       <workItem from="1612351179299" duration="286000" />
       <workItem from="1612356578573" duration="2223000" />
       <workItem from="1612358884668" duration="1242000" />
-      <workItem from="1612360155012" duration="5001000" />
+      <workItem from="1612360155012" duration="15052000" />
     </task>
     <servers />
   </component>
@@ -191,6 +195,18 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="594" y="215" width="800" height="689" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1848.1053/1920.0.2192.1233@72.27.1848.1053" timestamp="1612364450949" />
+    <state x="72" y="22" width="885" height="1058" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1612366089357">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="72" y="22" width="885" height="1058" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/72.27.1848.1053/1920.0.2192.1233@72.27.1848.1053" timestamp="1612366089357" />
+    <state x="732" y="272" width="524" height="496" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1612375069972">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="732" y="272" width="524" height="496" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/72.27.1848.1053/1920.0.2192.1233@72.27.1848.1053" timestamp="1612375069972" />
+    <state x="172" y="92" width="1648" height="858" key="DiffContextDialog" timestamp="1612375401613">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="172" y="92" width="1648" height="858" key="DiffContextDialog/72.27.1848.1053/1920.0.2192.1233@72.27.1848.1053" timestamp="1612375401613" />
     <state x="634" y="331" width="720" height="457" key="EditFileWatcherDialog" timestamp="1612358961457">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
@@ -203,17 +219,29 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state width="265" height="500" key="HiddenNamespacesPopup/72.27.1848.1053/1920.0.2192.1233@72.27.1848.1053" timestamp="1612364467558" />
-    <state x="601" y="268" width="785" height="573" key="NewPhpClassDialog" timestamp="1612341300548">
+    <state x="601" y="243" width="785" height="657" key="NewPhpClassDialog" timestamp="1612373000429">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="601" y="268" width="785" height="573" key="NewPhpClassDialog/72.27.1848.1053/1920.0.2192.1233@72.27.1848.1053" timestamp="1612341300548" />
+    <state x="601" y="243" width="785" height="657" key="NewPhpClassDialog/72.27.1848.1053/1920.0.2192.1233@72.27.1848.1053" timestamp="1612373000429" />
     <state x="488" y="189" key="SettingsEditor" timestamp="1612358970036">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="488" y="189" key="SettingsEditor/72.27.1848.1053/1920.0.2192.1233@72.27.1848.1053" timestamp="1612358970036" />
+    <state x="172" y="97" width="1648" height="858" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1612375401613">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="172" y="97" width="1648" height="858" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/72.27.1848.1053/1920.0.2192.1233@72.27.1848.1053" timestamp="1612375401613" />
     <state x="168" y="222" width="1648" height="858" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1612364451446">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="168" y="222" width="1648" height="858" key="com.intellij.history.integration.ui.views.FileHistoryDialog/72.27.1848.1053/1920.0.2192.1233@72.27.1848.1053" timestamp="1612364451446" />
+    <state x="1992" y="-5" width="1322" height="1014" maximized="true" key="dock-window-1" timestamp="1612375401613">
+      <screen x="1920" y="0" width="2192" height="1233" />
+    </state>
+    <state x="1992" y="-5" width="1322" height="1014" maximized="true" key="dock-window-1/72.27.1848.1053/1920.0.2192.1233@72.27.1848.1053" timestamp="1612375401613" />
+    <state x="659" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1612374338268">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="659" y="255" width="672" height="678" key="search.everywhere.popup/72.27.1848.1053/1920.0.2192.1233@72.27.1848.1053" timestamp="1612374338268" />
   </component>
 </project>
