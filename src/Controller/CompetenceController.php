@@ -11,22 +11,26 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 /**
- * @Route("/competence")
+ * @Route("/admin/competence")
  */
 class CompetenceController extends AbstractController
 {
     /**
      * @Route("/", name="competence_index", methods={"GET"})
+     * @param CompetenceRepository $competenceRepository
+     * @return Response
      */
     public function index(CompetenceRepository $competenceRepository): Response
     {
-        return $this->render('competence/index.html.twig', [
+        return $this->render('admin/competence/index.html.twig', [
             'competences' => $competenceRepository->findAll(),
         ]);
     }
 
     /**
      * @Route("/new", name="competence_new", methods={"GET","POST"})
+     * @param Request $request
+     * @return Response
      */
     public function new(Request $request): Response
     {
@@ -42,7 +46,7 @@ class CompetenceController extends AbstractController
             return $this->redirectToRoute('competence_index');
         }
 
-        return $this->render('competence/new.html.twig', [
+        return $this->render('/admin/competence/new.html.twig', [
             'competence' => $competence,
             'form' => $form->createView(),
         ]);
@@ -50,16 +54,21 @@ class CompetenceController extends AbstractController
 
     /**
      * @Route("/{id}", name="competence_show", methods={"GET"})
+     * @param Competence $competence
+     * @return Response
      */
     public function show(Competence $competence): Response
     {
-        return $this->render('competence/show.html.twig', [
+        return $this->render('/admin/competence/show.html.twig', [
             'competence' => $competence,
         ]);
     }
 
     /**
      * @Route("/{id}/edit", name="competence_edit", methods={"GET","POST"})
+     * @param Request $request
+     * @param Competence $competence
+     * @return Response
      */
     public function edit(Request $request, Competence $competence): Response
     {
@@ -72,7 +81,7 @@ class CompetenceController extends AbstractController
             return $this->redirectToRoute('competence_index');
         }
 
-        return $this->render('competence/edit.html.twig', [
+        return $this->render('/admin/competence/edit.html.twig', [
             'competence' => $competence,
             'form' => $form->createView(),
         ]);
@@ -80,6 +89,9 @@ class CompetenceController extends AbstractController
 
     /**
      * @Route("/{id}", name="competence_delete", methods={"DELETE"})
+     * @param Request $request
+     * @param Competence $competence
+     * @return Response
      */
     public function delete(Request $request, Competence $competence): Response
     {

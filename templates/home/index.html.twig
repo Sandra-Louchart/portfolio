@@ -40,4 +40,94 @@
             {% endfor %}
         </div>
     </div>
+
+<h2 class="title text-center text-dark mt-5">Mes competences</h2>
+<div class="container-fluid my-5">
+    <div class="row text-center justify-content-center mb-4">
+        {% for competence in competences %}
+            <div class="card m-4">
+                <div class="card-body">
+                    <h2 class="h3 card-title">{{ competence.name }}</h2>
+                </div>
+                <div class="card-body d-flex justify-content-between">
+                    <p>{{ competence.image }}</p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+    <h1>Administrative index</h1>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>First</th>
+            <th>Last</th>
+            <th>Adress</th>
+            <th>Number</th>
+            <th>Zip</th>
+            <th>City</th>
+            <th>actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for administrative in administratives %}
+            <tr>
+                <td>{{ administrative.id }}</td>
+                <td>{{ administrative.first }}</td>
+                <td>{{ administrative.last }}</td>
+                <td>{{ administrative.adress }}</td>
+                <td>{{ administrative.number }}</td>
+                <td>{{ administrative.zip }}</td>
+                <td>{{ administrative.city }}</td>
+                <td>
+                    <a href="{{ path('administrative_show', {'id': administrative.id}) }}">show</a>
+                    <a href="{{ path('administrative_edit', {'id': administrative.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="8">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <h1>Project index</h1>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Language</th>
+            <th>Objectif</th>
+            <th>Description</th>
+            <th>Image</th>
+            <th>actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for project in projects %}
+            <tr>
+                <td>{{ project.id }}</td>
+                <td>{{ project.name }}</td>
+                <td>{{ project.language }}</td>
+                <td>{{ project.objectif }}</td>
+                <td>{{ project.description }}</td>
+                <td>{{ project.image }}</td>
+                <td>
+                    <a href="{{ path('project_show', {'id': project.id}) }}">show</a>
+                    <a href="{{ path('project_edit', {'id': project.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="7">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
 {% endblock %}

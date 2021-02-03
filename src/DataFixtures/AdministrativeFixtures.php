@@ -5,7 +5,7 @@ namespace App\DataFixtures;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
 
-class ContactFixtures extends Fixture
+class AdministrativeFixtures extends Fixture
 {
     public function load(ObjectManager $manager)
     {

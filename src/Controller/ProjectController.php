@@ -11,22 +11,26 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 /**
- * @Route("/project")
+ * @Route("/admin/project")
  */
 class ProjectController extends AbstractController
 {
     /**
      * @Route("/", name="project_index", methods={"GET"})
+     * @param ProjectRepository $projectRepository
+     * @return Response
      */
     public function index(ProjectRepository $projectRepository): Response
     {
-        return $this->render('project/index.html.twig', [
+        return $this->render('admin/project/index.html.twig', [
             'projects' => $projectRepository->findAll(),
         ]);
     }
 
     /**
      * @Route("/new", name="project_new", methods={"GET","POST"})
+     * @param Request $request
+     * @return Response
      */
     public function new(Request $request): Response
     {
@@ -42,7 +46,7 @@ class ProjectController extends AbstractController
             return $this->redirectToRoute('project_index');
         }
 
-        return $this->render('project/new.html.twig', [
+        return $this->render('/admin/project/new.html.twig', [
             'project' => $project,
             'form' => $form->createView(),
         ]);
@@ -50,16 +54,21 @@ class ProjectController extends AbstractController
 
     /**
      * @Route("/{id}", name="project_show", methods={"GET"})
+     * @param Project $project
+     * @return Response
      */
     public function show(Project $project): Response
     {
-        return $this->render('project/show.html.twig', [
+        return $this->render('/admin/project/show.html.twig', [
             'project' => $project,
         ]);
     }
 
     /**
      * @Route("/{id}/edit", name="project_edit", methods={"GET","POST"})
+     * @param Request $request
+     * @param Project $project
+     * @return Response
      */
     public function edit(Request $request, Project $project): Response
     {
@@ -72,7 +81,7 @@ class ProjectController extends AbstractController
             return $this->redirectToRoute('project_index');
         }
 
-        return $this->render('project/edit.html.twig', [
+        return $this->render('/admin/project/edit.html.twig', [
             'project' => $project,
             'form' => $form->createView(),
         ]);
@@ -80,6 +89,9 @@ class ProjectController extends AbstractController
 
     /**
      * @Route("/{id}", name="project_delete", methods={"DELETE"})
+     * @param Request $request
+     * @param Project $project
+     * @return Response
      */
     public function delete(Request $request, Project $project): Response
     {

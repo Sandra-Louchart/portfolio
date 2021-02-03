@@ -2,13 +2,13 @@
 
 namespace App\Entity;
 
-use App\Repository\ContactRepository;
+use App\Repository\AdministrativeRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass=ContactRepository::class)
+ * @ORM\Entity(repositoryClass=AdministrativeRepository::class)
  */
-class Contact
+class Administrative
 {
     /**
      * @ORM\Id
@@ -40,7 +40,12 @@ class Contact
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $mail;
+    private $zip;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $city;
 
     public function getId(): ?int
     {
@@ -95,14 +100,26 @@ class Contact
         return $this;
     }
 
-    public function getMail(): ?string
+    public function getZip(): ?string
     {
-        return $this->mail;
+        return $this->zip;
     }
 
-    public function setMail(string $mail): self
+    public function setZip(string $zip): self
     {
-        $this->mail = $mail;
+        $this->zip = $zip;
+
+        return $this;
+    }
+
+    public function getCity(): ?string
+    {
+        return $this->city;
+    }
+
+    public function setCity(string $city): self
+    {
+        $this->city = $city;
 
         return $this;
     }

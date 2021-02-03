@@ -22,7 +22,7 @@ class FormationController extends AbstractController
      */
     public function index(FormationRepository $formationRepository): Response
     {
-        return $this->render('formation/index.html.twig', [
+        return $this->render('/admin/formation/index.html.twig', [
             'formations' => $formationRepository->findAll(),
         ]);
     }
@@ -46,7 +46,7 @@ class FormationController extends AbstractController
             return $this->redirectToRoute('formation_index');
         }
 
-        return $this->render('formation/new.html.twig', [
+        return $this->render('/admin/formation/new.html.twig', [
             'formation' => $formation,
             'form' => $form->createView(),
         ]);
@@ -59,7 +59,7 @@ class FormationController extends AbstractController
      */
     public function show(Formation $formation): Response
     {
-        return $this->render('formation/show.html.twig', [
+        return $this->render('/admin/formation/show.html.twig', [
             'formation' => $formation,
         ]);
     }
@@ -82,7 +82,7 @@ class FormationController extends AbstractController
             return $this->redirectToRoute('formation_index');
         }
 
-        return $this->render('formation/edit.html.twig', [
+        return $this->render('/admin/formation/edit.html.twig', [
             'formation' => $formation,
             'form' => $form->createView(),
         ]);
