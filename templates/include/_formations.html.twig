@@ -11,34 +11,28 @@
 </div>
 
 <h2 class="title text-center text-dark mt-5">Mes formations</h2>
-<div class="container-fluid my-5">
-    <div class="row text-center justify-content-center mb-4">
-        {% for formation in formations %}
-            <div class="card m-4">
-                <div class="card-body">
-                    <h2 class="h3 card-title">{{ formation.name }}</h2>
-                    <p class="card-text">
-                        {{ formation.date }}
-                        {{ formation.etablissement }}
-                        {{ formation.city }}
-                    </p>
-                </div>
-                <div class="card-body d-flex justify-content-between">
-                    <p>{{ formation.image }}</p>
-                </div>
-            </div>
-        {% endfor %}
-    </div>
-</div>
 <div id="home_quicklinks">
-    <a class="quicklink" href="">
-                                    <span class="ql_caption">
-                                        <span class="outer">
-                                            <span class="inner">
-                                                <h3></h3>
-                                            </span>
-                                        </span>
-                                    </span>
+    {% for formation in formations %}
+    <a class="quicklink" >
+        <span class="ql_caption">
+            <span class="outer">
+                <span class="inner">
+                    <h3>{{ formation.name }}</h3>
+                     <p class="card-text">
+                         {{ formation.date }} </br>
+                         {{ formation.etablissement }} </br>
+                         {{ formation.city }}
+                    </p>
+                </span>
+            </span>
+        </span>
         <span class="ql_top"></span>
         <span class="ql_bottom"></span>
     </a>
+    {% else %}
+        <tr>
+            <td colspan="7">no records found</td>
+        </tr>
+    {% endfor %}
+</div>
+

@@ -350,7 +350,6 @@ a.quicklink .ql_caption {
   border-spacing: 0px;
   padding: 0px;
   background: $c-card;
-
 }
 a.quicklink .ql_caption h3 {
   margin: 0px;
@@ -417,29 +416,7 @@ a.quicklink.link1 .ql_bottom {
   width: 30%;
 }
 
-.item.list-group-item .list-group-image
-{
-  margin-right: 10px;
-}
-.item.list-group-item .thumbnail
-{
-  margin-bottom: 0px;
-  display: inline-block;
-}
-.item.list-group-item .caption
-{
-  float: left;
-  width: 70%;
-  margin: 0;
+p{
+  color:$c-dark;
 }
 
-.item.list-group-item:before, .item.list-group-item:after
-{
-  display: table;
-  content: " ";
-}
-
-.item.list-group-item:after
-{
-  clear: both;
-}
