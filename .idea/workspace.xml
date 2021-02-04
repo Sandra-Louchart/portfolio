@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="004bcd0a-4992-4496-8f25-89dd973f361b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Controller/ContactController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Contact.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/ContactType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/ContactRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/contact/contact.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/contact/email.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8e39bdd8-a12e-4f72-bd34-25b728ca2bf3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8e39bdd8-a12e-4f72-bd34-25b728ca2bf3.xml" afterDir="false" />
-    </list>
+    <list default="true" id="004bcd0a-4992-4496-8f25-89dd973f361b" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -149,7 +141,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Controller" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -184,6 +176,7 @@
       <workItem from="1612356578573" duration="2223000" />
       <workItem from="1612358884668" duration="1242000" />
       <workItem from="1612360155012" duration="15052000" />
+      <workItem from="1612375430408" duration="2971000" />
     </task>
     <servers />
   </component>
@@ -199,10 +192,10 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="72" y="22" width="885" height="1058" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/72.27.1848.1053/1920.0.2192.1233@72.27.1848.1053" timestamp="1612366089357" />
-    <state x="732" y="272" width="524" height="496" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1612375069972">
+    <state x="732" y="262" width="524" height="496" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1612378119095">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="732" y="272" width="524" height="496" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/72.27.1848.1053/1920.0.2192.1233@72.27.1848.1053" timestamp="1612375069972" />
+    <state x="732" y="262" width="524" height="496" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/72.27.1848.1053/1920.0.2192.1233@72.27.1848.1053" timestamp="1612378119095" />
     <state x="172" y="92" width="1648" height="858" key="DiffContextDialog" timestamp="1612375401613">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
@@ -219,10 +212,10 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state width="265" height="500" key="HiddenNamespacesPopup/72.27.1848.1053/1920.0.2192.1233@72.27.1848.1053" timestamp="1612364467558" />
-    <state x="601" y="243" width="785" height="657" key="NewPhpClassDialog" timestamp="1612373000429">
+    <state x="601" y="228" width="785" height="685" key="NewPhpClassDialog" timestamp="1612378064785">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="601" y="243" width="785" height="657" key="NewPhpClassDialog/72.27.1848.1053/1920.0.2192.1233@72.27.1848.1053" timestamp="1612373000429" />
+    <state x="601" y="228" width="785" height="685" key="NewPhpClassDialog/72.27.1848.1053/1920.0.2192.1233@72.27.1848.1053" timestamp="1612378064785" />
     <state x="488" y="189" key="SettingsEditor" timestamp="1612358970036">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
