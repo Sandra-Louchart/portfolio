@@ -1,3 +1,4 @@
+<section id="competence">
 <div id="intro-down-arrow-target" class="landing-quote">
 <div class="wrapper"><div class="blockquote">
         <figure class="background">
@@ -12,17 +13,19 @@
 </div>
 
 <h2 class="title text-center text-dark mt-5">Mes competences</h2>
-<div class="container-fluid my-5">
-    <div class="row text-center justify-content-center mb-4">
-        {% for competence in competences %}
-            <div class="card m-4">
+<div class="row">
+
+    {% for competence in competences %}
+
+        <div class="competence col-sm-6 col-md-3 col-lg-2">
+            <div class="card margin">
                 <div class="card-body">
-                    <h2 class="h3 card-title">{{ competence.name }}</h2>
-                </div>
-                <div class="card-body d-flex justify-content-between">
-                    <p>{{ competence.image }}</p>
+                    <h5 class="card-title text-center"> {{ competence.name }}</h5>
                 </div>
             </div>
-        {% endfor %}
-    </div>
+        </div>
+    {% else %}
+        "Il n'y a actuellement aucunes compétences saisies"
+    {% endfor %}
 </div>
+</section>

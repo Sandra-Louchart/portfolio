@@ -10,27 +10,21 @@
     </div>
 </div>
 <h2 class="title text-center text-dark mt-5">Mes projets</h2>
-<div class="container">
+<div class="row">
+
     {% for project in projects %}
-        <div id="products" class="row view-group">
-            <div class="item col-xs-4 col-lg-4">
-                <div class="thumbnail card">
-                    <div class="img-event">
-                        <img class="group list-group-image img-fluid" src="http://placehold.it/400x250/000/fff" alt="" />
-                    </div>
-                    <div class="caption card-body">
-                        <h4 class="group card-title list-group-item-heading">
-                            {{ project.name}}</h4>
-                        <p class="group  list-group-item-text">
-                            {{ project.description }}</p>
-                        <p class="group  list-group-item-text">       {{ project.language}}</p>
-                    </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="project card margin">
+                <div class="card-body">
+                    <h3 class="card-title text-center"> {{ project.name }}</h3>
+                    <h4 class="card-title text-center"> {{ project.language }}</h4>
+                    <h4 class="card-title text-center"> {{ project.objectif }}</h4>
+                    <h5 class="card-title text-center"> {{ project.description }}</h5>
                 </div>
             </div>
         </div>
     {% else %}
-        <tr>
-            <td colspan="7">no records found</td>
-        </tr>
+        Il n'y as pas de projet actuellement
     {% endfor %}
 </div>

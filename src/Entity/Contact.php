@@ -2,11 +2,13 @@
 
 namespace App\Entity;
 
-use App\Repository\ContactRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
- * @ORM\Entity(repositoryClass=ContactRepository::class)
+ * Class Contact
+ * @package App\Entity
+ * @ORM\Entity
  */
 class Contact
 {
@@ -18,38 +20,60 @@ class Contact
     private $id;
 
     /**
-     * @ORM\Column(type="string", length=100)
-     */
-    private $firstname;
-
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
-    private $lastname;
-
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
-    private $company;
-
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
-    private $number;
-
-    /**
-     * @ORM\Column(type="string", length=255)
+     * @Assert\Email(message = "L'adresse '{{ value }}' n'est pas valide.")
      */
     private $email;
 
     /**
-     * @ORM\Column(type="text")
-     */
+     * @Assert\NotBlank
+     * */
     private $message;
+
+    /**
+     * @Assert\NotBlank
+     * @Assert\Length(max="255")
+     * */
+    private $firstname;
+
+    /**
+     * @Assert\NotBlank
+     * @Assert\Length(max="255")
+     * */
+    private $lastname;
+
+    /**
+     * @Assert\NotBlank
+     * @Assert\Length(max="255")
+     * */
+    private $subject;
 
     public function getId(): ?int
     {
         return $this->id;
+    }
+
+    public function getEmail(): ?string
+    {
+        return $this->email;
+    }
+
+    public function setEmail(string $email): self
+    {
+        $this->email = $email;
+
+        return $this;
+    }
+
+    public function getMessage(): ?string
+    {
+        return $this->message;
+    }
+
+    public function setMessage(string $message): self
+    {
+        $this->message = $message;
+
+        return $this;
     }
 
     public function getFirstname(): ?string
@@ -76,50 +100,14 @@ class Contact
         return $this;
     }
 
-    public function getCompany(): ?string
+    public function getSubject(): ?string
     {
-        return $this->company;
+        return $this->subject;
     }
 
-    public function setCompany(string $company): self
+    public function setSubject(string $subject): self
     {
-        $this->company = $company;
-
-        return $this;
-    }
-
-    public function getNumber(): ?string
-    {
-        return $this->number;
-    }
-
-    public function setNumber(string $number): self
-    {
-        $this->number = $number;
-
-        return $this;
-    }
-
-    public function getEmain(): ?string
-    {
-        return $this->emain;
-    }
-
-    public function setEmain(string $emain): self
-    {
-        $this->emain = $emain;
-
-        return $this;
-    }
-
-    public function getMessage(): ?string
-    {
-        return $this->message;
-    }
-
-    public function setMessage(string $message): self
-    {
-        $this->message = $message;
+        $this->subject = $subject;
 
         return $this;
     }

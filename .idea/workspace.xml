@@ -2,43 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="004bcd0a-4992-4496-8f25-89dd973f361b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/images/Sandra louchart.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/github (1).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/github.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/home (1).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/home.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/left-quotes-sign (1).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/left-quotes-sign.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/linkedin (1).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/linkedin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/mail (1).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/mail.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/phone-call (1).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/phone-call.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/right-quotes-symbol (1).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/right-quotes-symbol.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/include/_competences.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/include/_contact.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/include/_footer.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/include/_formations.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/include/_me.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/include/_projects.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/portfolio.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/portfolio.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/MailerController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/styles/vars.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/vars.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20210203165238.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20210203181558.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ContactController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Contact.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/ContactType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/ContactRepository.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/include/_competences.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/include/_competences.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/include/_footer.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/include/_footer.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/include/_me.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/include/_me.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/include/_navbar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/include/_navbar.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/include/_projects.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/include/_projects.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,6 +199,7 @@
       <workItem from="1612423550246" duration="3291000" />
       <workItem from="1612428487039" duration="2302000" />
       <workItem from="1612439763045" duration="6038000" />
+      <workItem from="1612459812772" duration="864000" />
     </task>
     <servers />
   </component>
