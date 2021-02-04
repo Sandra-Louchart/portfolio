@@ -86,27 +86,29 @@ figure {
   margin-inline-end: 40px;
 }
 
-.blockquote figure img:first-child {
+.blockquote figure svg:first-child {
   top: 1.25rem;
   left: 0;
   transform: translate3d(-30%,0,0);
 }
 
-.blockquote figure img:last-child {
+.blockquote figure svg:last-child {
   bottom: 1.875rem;
   right: 0;
   transform: translate3d(30%,0,0);
 }
 
-.blockquote figure img {
-  width: 5.3125rem;
+.blockquote figure svg {
+  width: 50px;
   height: auto;
   position: absolute;
 }
-img {
+svg {
   max-width: 100%;
+  width: 30px;
+  height: 30px;
 }
-img {
+svg {
   border: 0;
 }
 
@@ -457,12 +459,20 @@ p{
 
 //competences
 
+h1{
+  color: $c-primary;
+  font-size: 35px
+}
+h2{
+  color: $c-secondary;
+  font-size: 30px
+}
 h3{
   color: $c-primary;
   font-size: 28px
 }
 h4{
-  color: $c-primary;
+  color: $c-secondary;
   font-size: 22px
 }
 h5{
@@ -470,11 +480,16 @@ h5{
   font-size: 16px
 }
 
+.presentation {
+    color:$c-dark;
+    font-size: 22px;
+}
 .project{
   margin: 50px;
 }
 .competence{
   margin: 50px;
+  border-radius: 25px;
 
 }
 
