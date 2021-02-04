@@ -1,7 +1,7 @@
 @import 'vars.scss';
 
 * {
-
+  box-sizing: border-box;
 }
 
 body {
@@ -10,11 +10,12 @@ body {
   font-family: $ff-title;
   color: $c-secondary;
 }
-
+//navBar
 nav {
   background-color: $c-primary ;
 
 }
+
 div.container
 {
   font-family: $ff-main;
@@ -62,4 +63,383 @@ div.brackets a:hover:before, div.brackets a:hover:after
 {
   opacity: 1;
   transform: translateX(0px);
+}
+
+//block Citation
+
+.blockquote figure {
+  max-width: 49.375rem;
+  margin: 0 auto;
+  padding: 6.25rem 2.5rem;
+  position: relative;
+}
+figure {
+  margin: 1em 40px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
+}
+
+.blockquote figure img:first-child {
+  top: 1.25rem;
+  left: 0;
+  transform: translate3d(-30%,0,0);
+}
+
+.blockquote figure img:last-child {
+  bottom: 1.875rem;
+  right: 0;
+  transform: translate3d(30%,0,0);
+}
+
+.blockquote figure img {
+  width: 5.3125rem;
+  height: auto;
+  position: absolute;
+}
+img {
+  max-width: 100%;
+}
+img {
+  border: 0;
+}
+
+.blockquote figure.background blockquote {
+  margin: 0 0 1.25rem;
+}
+
+.blockquote figure blockquote {
+  margin: 0 0 2.1875rem;
+  color: $c-light;
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+blockquote {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
+}
+
+.blockquote figure figcaption {
+  text-align: center;
+  margin: 0 auto;
+  color: $c-light;
+  font-size: .875rem;
+  font-weight: 300;
+  display: block;
+}
+
+.landing-quote{
+  background-color: $c-primary;
+}
+
+//Me
+.about {
+  position : relative;
+
+  &:after {
+    content          : '';
+    position         : absolute;
+    bottom           : 0;
+    display          : block;
+    width            : 100%;
+    height           : 8px;
+    background-color : $c-secondary;
+
+    @media screen and (max-width : 992px) {
+      bottom : 50%;
+    }
+    @media screen and (min-width : 992px) and (max-width : 1200px) {
+      bottom : -$space-md;
+    }
+  }
+
+  .about-content {
+    margin-left  : $space-xl;
+    margin-right : $space-xl;
+
+    .content-title {
+      font-weight : bold;
+    }
+
+    .content-subtitle {
+      font-style    : italic;
+      margin-top    : $space;
+      margin-bottom : $space-md;
+    }
+  }
+
+  .profile-image {
+    width         : 400px;
+    margin-bottom : 2rem;
+    transform     : rotate(-8deg);
+    z-index       : 10;
+    text-align    : center;
+
+    @media screen and (min-width : 992px) {
+      transform     : rotate(-8deg) translateY(40px);
+      margin-bottom : 0;
+    }
+  }
+
+  .about-image {
+    position : relative;
+    overflow : hidden;
+
+    .image {
+      filter          : grayscale(100%);
+      position        : absolute;
+      top             : 0;
+      left            : 0;
+      padding         : 1.25rem;
+      bottom          : 0;
+      height          : 100%;
+      object-fit      : cover;
+      object-position : top;
+
+      @media screen and (max-width : 992px) {
+        padding : $space-lg;
+      }
+
+      img {
+        position : absolute;
+      }
+    }
+  }
+
+}
+
+//Administrative
+span{
+  font-size:15px;
+}
+
+.box{
+  padding:60px 0px;
+}
+
+.box-part{
+  background:#FFF;
+  border-radius:0;
+  padding:60px 10px;
+  margin:30px 0px;
+}
+.text{
+  margin:20px 0px;
+}
+
+.fa{
+  color:#4183D7;
+}
+
+//footer
+.social {
+  position: relative;
+  height: 3em;
+  width: 13.5em;
+  margin: 150px 450px;
+}
+
+.social li {
+  display: block;
+  height: 4em;
+  line-height: 4em;
+  margin: -2.2em;
+  position: absolute;
+  -webkit-transition: -webkit-transform .7s;
+  -moz-transition: -moz-transform .7s;
+  -ms-transition: -ms-transform .7s;
+  -o-transition: -o-transform .7s;
+  transition: transform .7s;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  text-align: center;
+  width: 4em;
+
+}
+
+.social a {
+  color: #fffdf0;
+  display: block;
+  height: 4em;
+  line-height: 6em;
+  text-align: center;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  width: 4em;
+
+}
+
+.social li:hover {
+  -webkit-transform: scale(1.3,1.3) rotate(45deg);
+  -moz-transform: scale(1.3,1.3) rotate(45deg);
+  -ms-transform: scale(1.3,1.3) rotate(45deg);
+  -o-transform: scale(1.3,1.3) rotate(45deg);
+  transform: scale(1.3,1.3) rotate(45deg);
+}
+
+.github {
+  background: #155b9d;
+  left: 0;
+  top: 0%;
+}
+
+.twitter {
+  background: #1a9ec4;
+  bottom: 0;
+  left: 25%;
+}
+
+.linkedin {
+  background: #3f7aa3;
+  top: 0%;
+  left: 50%;
+}
+
+//formations
+#home_quicklinks {
+  padding: 20px 0;
+  text-align: center;
+}
+a.quicklink.link1 {
+  background: $c-card;
+}
+a.quicklink {
+  display: inline-block;
+  width: 302px;
+  height: 173px;
+  position: relative;
+  margin: 90px 30px;
+}
+a.quicklink .ql_caption {
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.outer {
+  display: table;
+  position: relative;
+  vertical-align: middle;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  border-spacing: 0px;
+  padding: 0px;
+}
+.inner {
+  display: table-cell;
+  position: relative;
+  vertical-align: middle;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  border-spacing: 0px;
+  padding: 0px;
+  background: $c-card;
+
+}
+a.quicklink .ql_caption h3 {
+  margin: 0px;
+  padding: 0px;
+  text-transform: uppercase;
+  line-height: 1.46em;
+  color: $c-dark;
+}
+a.quicklink.link1 .ql_top {
+  border-bottom-color: $c-card;
+}
+a.quicklink.link1 .ql_bottom {
+  border-top-color: $c-card;
+}
+
+.ql_top {
+  bottom: 173px;
+  border-bottom: 89px solid $c-card;
+}
+.ql_bottom {
+  top: 173px;
+  border-top: 89px solid $c-card;
+}
+.ql_top, .ql_bottom {
+  position: absolute;
+  left: 0px;
+  width: 0px;
+  border-left: 151px solid transparent;
+  border-right: 151px solid transparent;
+}
+
+//projects
+.view-group {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.thumbnail
+{
+  margin-bottom: 30px;
+  padding: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+
+.item.list-group-item
+{
+  float: none;
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 30px;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 0 1rem;
+  border: 0;
+}
+.item.list-group-item .img-event {
+  float: left;
+  width: 30%;
+}
+
+.item.list-group-item .list-group-image
+{
+  margin-right: 10px;
+}
+.item.list-group-item .thumbnail
+{
+  margin-bottom: 0px;
+  display: inline-block;
+}
+.item.list-group-item .caption
+{
+  float: left;
+  width: 70%;
+  margin: 0;
+}
+
+.item.list-group-item:before, .item.list-group-item:after
+{
+  display: table;
+  content: " ";
+}
+
+.item.list-group-item:after
+{
+  clear: both;
 }

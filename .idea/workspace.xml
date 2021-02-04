@@ -1,7 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="004bcd0a-4992-4496-8f25-89dd973f361b" name="Default Changelist" comment="" />
+    <list default="true" id="004bcd0a-4992-4496-8f25-89dd973f361b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/images/Sandra louchart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/github (1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/github.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/home (1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/left-quotes-sign (1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/left-quotes-sign.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/linkedin (1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/linkedin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/mail (1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/mail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/phone-call (1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/phone-call.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/right-quotes-symbol (1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/right-quotes-symbol.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/include/_competences.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/include/_contact.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/include/_footer.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/include/_formations.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/include/_me.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/include/_projects.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/portfolio.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/portfolio.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/vars.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/vars.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20210203165238.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20210203181558.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -130,6 +168,8 @@
       <path value="$PROJECT_DIR$/vendor/symfony/webpack-encore-pack" />
       <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
       <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
+      <path value="$PROJECT_DIR$/vendor/jms/metadata" />
+      <path value="$PROJECT_DIR$/vendor/vich/uploader-bundle" />
     </include_path>
   </component>
   <component name="ProjectId" id="1nxnwLDVBS5mtm1X4ebB0SkS2dE" />
@@ -141,7 +181,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../projets/orleans-php-202009-project-paradis-ptits-cracks" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -154,12 +194,14 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/Controller" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/templates/admin" />
       <recent name="$PROJECT_DIR$/assets/js" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/build" />
+      <recent name="$PROJECT_DIR$/assets/images" />
+      <recent name="$PROJECT_DIR$/src/Controller" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -177,6 +219,9 @@
       <workItem from="1612358884668" duration="1242000" />
       <workItem from="1612360155012" duration="15052000" />
       <workItem from="1612375430408" duration="2971000" />
+      <workItem from="1612423550246" duration="3291000" />
+      <workItem from="1612428487039" duration="2302000" />
+      <workItem from="1612439763045" duration="6038000" />
     </task>
     <servers />
   </component>
@@ -204,10 +249,10 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="634" y="331" width="720" height="457" key="EditFileWatcherDialog/72.27.1848.1053/1920.0.2192.1233@72.27.1848.1053" timestamp="1612358961457" />
-    <state x="782" y="287" width="424" height="496" key="FileChooserDialogImpl" timestamp="1612360125113">
+    <state x="782" y="277" width="424" height="496" key="FileChooserDialogImpl" timestamp="1612430791555">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="782" y="287" width="424" height="496" key="FileChooserDialogImpl/72.27.1848.1053/1920.0.2192.1233@72.27.1848.1053" timestamp="1612360125113" />
+    <state x="782" y="277" width="424" height="496" key="FileChooserDialogImpl/72.27.1848.1053/1920.0.2192.1233@72.27.1848.1053" timestamp="1612430791555" />
     <state width="265" height="500" key="HiddenNamespacesPopup" timestamp="1612364467558">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
@@ -232,9 +277,9 @@
       <screen x="1920" y="0" width="2192" height="1233" />
     </state>
     <state x="1992" y="-5" width="1322" height="1014" maximized="true" key="dock-window-1/72.27.1848.1053/1920.0.2192.1233@72.27.1848.1053" timestamp="1612375401613" />
-    <state x="659" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1612374338268">
+    <state x="659" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1612428202721">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="659" y="255" width="672" height="678" key="search.everywhere.popup/72.27.1848.1053/1920.0.2192.1233@72.27.1848.1053" timestamp="1612374338268" />
+    <state x="659" y="255" width="672" height="678" key="search.everywhere.popup/72.27.1848.1053/1920.0.2192.1233@72.27.1848.1053" timestamp="1612428202721" />
   </component>
 </project>

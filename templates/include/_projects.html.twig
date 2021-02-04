@@ -1,0 +1,39 @@
+<div id="intro-down-arrow-target" class="landing-quote">
+    <div class="wrapper"><div class="blockquote">
+            <figure class="background">
+                <img src="{{ asset('build/left-quotes-sign.png') }}" alt="Quote Left">
+                <blockquote>Chaque difficulté rencontrée doit être l’occasion d’un nouveau progrès</blockquote>
+                <figcaption>Pierre de Coubertin</figcaption>
+                <img src="{{ asset('build/right-quotes-symbol.png') }}" alt="Quote Right">
+            </figure>
+        </div>
+    </div>
+</div>
+<h2 class="title text-center text-dark mt-5">Mes projets</h2>
+<div class="container">
+
+    {% for project in projects %}
+        <div id="products" class="row view-group">
+            <div class="item col-xs-4 col-lg-4">
+                <div class="thumbnail card">
+                    <div class="img-event">
+                        <img class="group list-group-image img-fluid" src="http://placehold.it/400x250/000/fff" alt="" />
+                    </div>
+                    <div class="caption card-body">
+                        <h4 class="group card-title list-group-item-heading">
+                            {{ project.name}}</h4>
+                        <p class="group  list-group-item-text">
+                            {{ project.description }}</p>
+                        <p class="group  list-group-item-text">       {{ project.language}}</p>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% else %}
+        <tr>
+            <td colspan="7">no records found</td>
+        </tr>
+    {% endfor %}
+</div>

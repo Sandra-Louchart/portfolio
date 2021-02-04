@@ -32,7 +32,7 @@ ProjectRepository $projectRepository)
     {
         return $this->render('admin/index.html.twig', [
             'formations'=>$formationRepository->findAll(),
-            'competences'=>$compentenceRepository->findAll(),
+            'competences'=>$competenceRepository->findAll(),
             'administratives'=>$administrativeRepository->findAll(),
             'projects'=>$projectRepository->findAll(),
         ]);
