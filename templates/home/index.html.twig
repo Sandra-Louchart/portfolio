@@ -8,10 +8,19 @@
 
 
 {% block body %}
+    <section id="me">
     {% include 'include/_me.html.twig' %}
+    </section>
+    <section id="projects">
     {% include 'include/_projects.html.twig' %}
+    </section>
+    <section id="formation">
     {% include 'include/_formations.html.twig' %}
+    </section>
+    <section id="competences">
     {% include 'include/_competences.html.twig' %}
+    </section>
+    <section id="contact">
     {% include 'include/_contact.html.twig' %}
-
+    </section>
 {% endblock %}

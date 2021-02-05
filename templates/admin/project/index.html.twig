@@ -3,11 +3,13 @@
 {% block title %}Project index{% endblock %}
 
 {% block body %}
-    <h1>Project index</h1>
+    <h1 class="title text-center mt-4">Project index</h1>
+<div class="container">
+    <a href="{{ path('project_new') }}">Create new</a>
 
-    <table class="table">
-        <thead>
-            <tr>
+    <table class="table text-dark">
+        <thead class="thead-dark text-center">
+            <tr class="thead-light text-center">
                 <th>Id</th>
                 <th>Name</th>
                 <th>Language</th>
@@ -17,7 +19,7 @@
                 <th>actions</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody >
         {% for project in projects %}
             <tr>
                 <td>{{ project.id }}</td>
@@ -38,6 +40,6 @@
         {% endfor %}
         </tbody>
     </table>
+</div>
 
-    <a href="{{ path('project_new') }}">Create new</a>
 {% endblock %}

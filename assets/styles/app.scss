@@ -490,9 +490,11 @@ h5{
 .competence{
   margin: 50px;
   border-radius: 25px;
-
 }
 
+.contactez{
+  margin-right: 50rem;
+}
 //contact
 .contact {
   background-color: $c-light;
@@ -540,4 +542,8 @@ h5{
 .contact button:hover {
   background: $c-primary;
   color: $c-light;
+}
+
+.nav-link {
+  color: $c-secondary;
 }

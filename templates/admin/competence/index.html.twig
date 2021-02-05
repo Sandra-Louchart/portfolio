@@ -3,10 +3,12 @@
 {% block title %}Competence index{% endblock %}
 
 {% block body %}
-    <h1>Competence index</h1>
+    <h1 class="title text-center mt-4">Competence index</h1>
+<div class="container">
+    <a href="{{ path('competence_new') }}">Create new</a>
 
-    <table class="table">
-        <thead>
+    <table class="table text-dark">
+        <thead class="thead-light text-center">
             <tr>
                 <th>Id</th>
                 <th>Name</th>
@@ -32,6 +34,5 @@
         {% endfor %}
         </tbody>
     </table>
-
-    <a href="{{ path('competence_new') }}">Create new</a>
+</div>
 {% endblock %}
